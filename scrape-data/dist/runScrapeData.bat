@@ -1,0 +1,1 @@
+java -classpath ./config;scrapedata.jar;jsoup-1.10.2.jar;mysql-connector-java-5.1.21.jar;selenium-server-standalone-3.4.0.jar Tasks.TaskMain -tasks %1
