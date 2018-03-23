@@ -1,0 +1,7 @@
+mutation {
+  createProduct(input:{product_id:5, product_name:"T-Shirt", price:19.99, 
+    imageurl:"/images/tshirt.jpg", brand:"Uplo", 
+    link:"http://uplo.com"}) {
+   product_name 
+  }
+}

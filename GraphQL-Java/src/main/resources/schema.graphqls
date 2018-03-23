@@ -1,0 +1,29 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  allLinks: [Link]
+  user(name: String): User
+}
+
+type Mutation {
+  createLink(url: String!, description: String!, userid: String): Link
+  createUser(name: String!, sex: String, birth: String): User
+}
+
+type Link {
+  id: ID!
+  url: String!
+  description: String
+  postedBy: User   
+}
+
+type User {
+  id: ID!
+  name: String!
+  sex: String!
+  birth: String	
+  posts: [Link]
+}
