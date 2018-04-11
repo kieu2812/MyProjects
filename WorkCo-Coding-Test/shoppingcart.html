@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping cart</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./css/shoppingcart.css">
+    <script src="./js/mainjs.js"></script>    
+</head>
+<body>
+    <div class="container">
+        <header class="container container-fluid">
+            <div class="row">
+                    <div class="col-md-6 col-sm-12" id="header-left">
+                            <h2>Acme Store</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12"  id="header-right">
+                            <a href="yourcart.html" onclick="shoppingCart.displayYourCart()" id="link-your-cart" >
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Your Cart is empty
+                            </a>
+                    </div>
+                    
+            </div>
+            
+            <hr>
+
+        <header>
+        <section id="productList">
+            <div class="product">
+                <div class="card mb-5">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <img  src="./imgs/watch1.jpg">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xm-8" id="productDetails"> 
+                                <div class="top">
+                                    <h3 class="productTitle" > Chronograph</h3>
+                                    <p>2 REMAINING</p>
+                                </div>
+                               <button class="btnAddToCart" onclick="shoppingCart.addProductToCart(1)" >ADD TO CART</button>
+
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-4">
+                                <p class="price"> $500.01</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card mb-5">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <img  src="./imgs/watch2.jpg">
+                            </div>
+                            <div class="col-md-4 col-sm-6"  id="productDetails">
+                              <div class="top">
+
+                               <h3  class="productTitle"> Quartz</h3>
+                               <p>10 REMAINING</p>
+                            </div>
+                               <button class="btnAddToCart"  onclick="shoppingCart.addProductToCart(2)">ADD TO CART</button>
+
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <p class="price"> $10.99</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="product">          
+                <div class="card mb-5">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <img  src="./imgs/watch3.jpg">
+                            </div>
+                            <div class="col-md-4 col-sm-6"  id="productDetails">
+                               <div class="top">
+                                <h3  class="productTitle">Weekender</h3>
+                               <p>5 REMAINING</p>
+                                </div>
+                               <button class="btnAddToCart"  onclick="shoppingCart.addProductToCart(3)" >ADD TO CART</button>
+
+                            </div>
+                            <div class="col-md-4 col-sm-6" >
+                                <p class="price"> $19.99</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>    
+     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/mainjquery.js"></script>
+</body>
+</html>

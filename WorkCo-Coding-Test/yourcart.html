@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your cart</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./css/yourcart.css">
+    <script src="./js/mainjs.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+      <header class="my-5">
+          <h3>Your cart</h3>
+          <hr>
+      </header>
+      <section id="section-yourcart">
+          <div class="yourcart my-5">
+              <div class="emptycard">
+                  <i class="fas fa-shopping-cart fa-5x"></i>
+                  <blockquote>Please add some products to your cart</blockquote>
+              </div>
+              <div class="card-list">
+                  <div class="card-item">
+                      <div class="row">
+                          <div class="col s6 mb-2">
+                              <img src="./imgs/watch1.jpg" class="img-responsive">
+                          </div>
+                          <div class="col s6 mb-2">
+                              <h4>Chronograph</h4>
+                              <p class="price">500.01</p>
+                              <button  onclick="shoppingCart.removeProductCartAll(1)" class="remove-item">Remove</button>
+                          </div>
+                      </div>
+
+                      <form>
+                          <div class="form-row align-items-center">
+
+                              <div class="col s4 form-group">
+                                  <button class="minus btn btn-secondary form-control"  onclick="shoppingCart.removeProductFromCart(1)">-</button>
+                              </div>
+                              <div class="col s4 form-group" >
+                                  <input class="qtyItem btn btn-secondary" type="number" value="1" min="0" max="2" step="1"  onchange="updateQuantity(1)">
+                              </div>
+                              <div class="col s4 form-group">
+                                  <button class="plus btn btn-secondary form-control" onclick="shoppingCart.addMoreToCart(1)">+</button>
+                              </div>
+                          </div>
+                      </form>
+
+                  </div>
+
+                  <div class="card-summary">
+                      <hr>
+                      <div class="row">
+
+                          <div class="col s6">
+                              <p> Subtotal</p>
+                              <p> Tax</p>
+                          </div>
+
+                          <div class="col s6">
+                              <p> $500.01</p>
+                              <p> $40.00</p>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <div class="col s6">Total</div>
+                          <div class="col s6">$540.01</div>
+                      </div>
+                  </div>
+
+      </section>
+
+      </div>
+      <footer class="form-row">
+        <button id="btnCheckOut" class="btn btn-primary col-xs-12 form-control" onclick="shoppingCart.checkOut()"> Check Out</button>
+      </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        shoppingCart.displayYourCart();
+    </script>
+</body>
+
+</html>
