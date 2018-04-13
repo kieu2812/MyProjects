@@ -162,7 +162,7 @@ function displayYourCart() {
         document.getElementById("btnCheckOut").style.visibility = "visible";
 
       //  document.getElementById("totalCost").style.visibility = "visible";
-        console.log(output);
+       // console.log(output);
     }
 };
 /////////////////////

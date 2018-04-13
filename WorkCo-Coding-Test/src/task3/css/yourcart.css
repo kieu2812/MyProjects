@@ -50,12 +50,15 @@ i{
 }
 .img-container{
     text-align: center;
+    display: inline-block;
+    float: left;
+    width: 70%;
 }
 .img-responsive{
     
-    display: block;
+    display: inline-block;
     margin: 10px auto 20px;
-    
+    width: 100%;
 }
 
 .qtyItem{
@@ -91,23 +94,19 @@ i{
   
 .product-Info{
     display: inline-block;
-    float: right; 
-    width: 40vw;
+    float: right;
+    width: 30%;
     justify-content: center;
     
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 3%;
 } 
 @media(max-width: 420px){
     .body{
         justify-content: center;
     }
-    .img-responsive{
-         width: 45vw;
-         float: left;
-         display: inline-block;
-         margin-left: 3%;
+    .img-container{
+        width: 45vw;
+        float: left;
+        display: inline-block;
     }
         
     .product-Info{
