@@ -1,0 +1,145 @@
+#section-yourcart{
+    text-align: center;
+
+    display: block;
+    margin: 0 auto;
+}
+.card{
+    border: none;
+    margin: 0 5px;
+}
+i{
+    opacity: 0.5;
+}
+.remove-item{
+  border: none;
+  background-color: #fff;
+  color: red;
+  width: 90%;
+}
+.remove-item:hover{
+  border: none;
+  background-color: #fff;
+  color: #fff;
+  background-color: red;
+}
+#btnCheckOut{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+#empty-cart{
+    /*center element*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    height: 50vh;
+}
+.form-group{
+    margin: 0;
+    padding: 0;
+}
+.btn-secondary{
+    background-color: #c0cfe8;
+    margin: 0px;
+
+}
+.img-container{
+    text-align: center;
+}
+.img-responsive{
+    
+    display: block;
+    margin: 10px auto 20px;
+    
+}
+
+.qtyItem{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+}
+.qtyItem:focus{
+    background-color: #f49542;
+    color: #000;
+}
+#btnCheckOut{
+    justify-content: center;
+    position: relative; 
+}
+.minus{
+    border-radius: 15px 0px 0px 15px;
+}
+.plus{
+    border-radius: 0px 15px 15px 0px;
+}
+.form-row{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+}
+.form-row>.col-s4{
+
+    width:  32%;
+    padding-left:  0;
+    padding-right:  0;
+}
+  
+.product-Info{
+    display: inline-block;
+    float: right; 
+    width: 40vw;
+    justify-content: center;
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3%;
+} 
+@media(max-width: 420px){
+    .body{
+        justify-content: center;
+    }
+    .img-responsive{
+         width: 45vw;
+         float: left;
+         display: inline-block;
+         margin-left: 3%;
+    }
+        
+    .product-Info{
+        display: inline-block;
+        float: right; 
+        width: 40vw;
+        justify-content: left;
+        text-align: left;
+        margin-left: 2%;
+        margin-right: 3%;
+        padding: 3%;
+    } 
+    h4{
+        font-size: 1em;
+    }
+    button{
+        margin: 0;
+    }
+    #btnCheckOut{
+        width: 100vw;
+        position: fixed;
+        bottom: 5px;
+        position: fixed;
+    }
+    .form-row{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
+    }
+    .form-row>.col-s4{
+         width:  32%;
+        padding-left:  0;
+        padding-right:  0;
+    }
+}
